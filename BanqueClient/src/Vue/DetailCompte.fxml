@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DetailCompteController">
+   <children>
+      <Pane prefHeight="640.0" prefWidth="1270.0">
+         <children>
+            <Pane prefHeight="113.0" prefWidth="1270.0" style="-fx-background-color: lightgrey;">
+               <children>
+                  <Label fx:id="Label_Titre" layoutX="490.0" layoutY="30.0" text="Compte :">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="Btn_Retour" layoutX="14.0" layoutY="123.0" mnemonicParsing="false" onAction="#Btn_Retour_Click" prefHeight="25.0" prefWidth="155.0" text="Retour à ma synthèse" />
+         </children></Pane>
+   </children>
+</VBox>
