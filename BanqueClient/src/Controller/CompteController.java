@@ -17,7 +17,6 @@ public class CompteController {
 	@FXML ListView<String> ListCompte;
 	
 
-	
     @FXML 
     public void initialize() {    	
     	
@@ -25,14 +24,19 @@ public class CompteController {
             @Override
             public void handle(MouseEvent event) {
             	
-            	String NumCompte = ListCompte.getSelectionModel().getSelectedItem();
-            	NumCompte = NumCompte.substring(NumCompte.indexOf("(")+1, NumCompte.indexOf(")"));            	
-                try {
-					new Vue("DetailCompte",null,NumCompte);
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+            	String NumCompte = null;     
+            	try{
+            		NumCompte = ListCompte.getSelectionModel().getSelectedItem();
+            		NumCompte = NumCompte.substring(NumCompte.indexOf("(")+1, NumCompte.indexOf(")"));    
+            	}
+            	catch (Exception e) {}
+            		
+            	if (NumCompte != null && NumCompte != "")
+	                try {
+						new Vue("DetailCompte",null,NumCompte);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}  		
             }
         });
     	
@@ -43,6 +47,17 @@ public class CompteController {
     public void Btn_NewCompte_Click() {
     	ActualiseCompte();
     }
+    
+    @FXML 
+    public void Btn_Deconnexion_Click() {
+    	Main.IDClient = 0;
+    	 try {
+				new Vue("Login",null,null);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}  
+    }
+    
     
 	public void AddListCompte(String Text)
 	{

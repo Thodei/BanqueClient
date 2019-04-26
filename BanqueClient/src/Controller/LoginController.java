@@ -26,6 +26,7 @@ public class LoginController {
 			{
 				if(Resultat.getInt("idUtilisateur") != 0)
 				{
+					System.out.println("ID : "+Resultat.getInt("idUtilisateur"));
 					Main.IDClient = Resultat.getInt("idUtilisateur");
 					new Vue("Compte",null,null);
 				}
