@@ -17,7 +17,7 @@ public class MySql
 	{		
 		try
 		{
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 		}
 		catch(ClassNotFoundException e)
 		{
@@ -25,12 +25,13 @@ public class MySql
 		}
 		try
 		{
-			connexion=DriverManager.getConnection("jdbc:mysql://" + ip + ":" + port + "/" + db, user, pwd);
+			connexion=DriverManager.getConnection("jdbc:mysql://" + ip + ":" + port + "/" + db + "?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC", user, pwd);
 			System.out.println("Connexion établie");
 		}
 		catch(SQLException e)
 		{
 			System.out.println("Connexion à la BDD impossible");
+			e.printStackTrace();
 		}
 	}
 	
