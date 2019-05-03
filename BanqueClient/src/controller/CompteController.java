@@ -18,25 +18,27 @@ public class CompteController {
 	
 
     @FXML 
-    public void initialize() {    	
-    	
-    	ListCompte.setOnMouseClicked(new EventHandler<MouseEvent>() {
+    public void initialize() 
+    {    
+    	ListCompte.setOnMouseClicked(new EventHandler<MouseEvent>() 
+    	{
             @Override
-            public void handle(MouseEvent event) {
-            	
-            	String NumCompte = null;     
-            	try{
-            		NumCompte = ListCompte.getSelectionModel().getSelectedItem();
-            		NumCompte = NumCompte.substring(NumCompte.indexOf("(")+1, NumCompte.indexOf(")"));    
-            	}
-            	catch (Exception e) {}
+            public void handle(MouseEvent event) 
+            {
+            	String NumCompte = null; 
+        		NumCompte = ListCompte.getSelectionModel().getSelectedItem();
+        		NumCompte = NumCompte.substring(NumCompte.indexOf("°")+1 , NumCompte.indexOf(" ", NumCompte.indexOf("°")));    
             		
             	if (NumCompte != null && NumCompte != "")
-	                try {
+            	{
+	                try 
+	                {
 						new Vue("DetailCompte",null,NumCompte);
-					} catch (Exception e) {
+					} catch (Exception e) 
+	                {
 						e.printStackTrace();
-					}  		
+					} 
+            	}
             }
         });
     	
@@ -44,12 +46,14 @@ public class CompteController {
     }  
     
     @FXML 
-    public void Btn_NewCompte_Click() {
+    public void Btn_NewCompte_Click() 
+    {
     	ActualiseCompte();
     }
     
     @FXML 
-    public void Btn_Deconnexion_Click() {
+    public void Btn_Deconnexion_Click() 
+    {
     	Main.IDClient = 0;
     	 try {
 				new Vue("Login",null,null);
@@ -64,22 +68,41 @@ public class CompteController {
 		ListCompte.getItems().add(ListCompte.getItems().size(), Text);
 	}
 	
-	public void ActualiseCompte()
+	public void ActualiseCompte() 
 	{    	
 		ListCompte.getItems().clear();
 		
-		try {
-			int i = 0;
-			ResultSet Resultat = Main.Req.RequeteSelect(Dictionnaire.Req_Select_GetAllCompte(Main.IDClient));			
-			while(Resultat.next())
+		//On récupère tous les comptes d'un client
+		ResultSet liste_comptes;
+		try 
+		{
+			liste_comptes = Main.Req.recuperer_comptes(String.valueOf(Main.IDClient));
+
+			if (liste_comptes.isBeforeFirst())
 			{
-				AddListCompte("Compte " + i + "		("+Resultat.getString(0)+")								"+""+" €");
-				i++;
+				while(liste_comptes.next())
+				{
+					String numCompte = String.valueOf(liste_comptes.getInt(1));
+					
+					//On récupère les détails de chaque compte
+					ResultSet compte = Main.Req.details_compte(numCompte);
+					compte.next();
+					String soldeCompte = String.valueOf(compte.getDouble("balanceCompte"));
+					AddListCompte("Compte n°" + numCompte + " ( Solde : "+ soldeCompte +" €)");
+				}
 			}
-		} catch (SQLException e) {
+			else
+				AddListCompte("Aucun compte existant.");
+		} catch (SQLException e) 
+		{
+			Main.message_erreur("Erreur lors de la récupération des comptes. (" + e.toString() + ")");
 			e.printStackTrace();
-		}		
-		
-    	//AddListCompte("Compte 1  (1578559)												5 000 €");
+		}
 	}
+	
+    @FXML 
+    public void btn_quitter() 
+    {
+    	Main.parentWindow.close();
+    }
 }
