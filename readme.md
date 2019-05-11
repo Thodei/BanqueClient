@@ -45,20 +45,28 @@ Il y a 2 utilisateurs :
 - Comptes en €
 - Virement entre comptes de la banque
 - Pas de limite de montants
-- On ne peut pas supprimer de compte (on geler)
+- On ne peut pas supprimer de compte (on peut geler)
 - Pas d’historique
 ### Côté agile :
 - Scrum master : Thomas
 - Backlog des sprints
 ## Sprint 0
-Vision du produit
-Pour les utilisateurs / clients d’une banque
-Qui ont besoin une application où l’on peut gérer ses comptes, consulter son solde mais aussi convertir son argent dans une autre devise pour faciliter ses déplacements.
-Notre solution, BanqueClient est une application de gestion de compte en banque
-Qui permet d’avoir accès à ses comptes et de pouvoir y faire des actions, en ligne et facilement, et rapidement, à l’instar de virements entre comptes.
-À l’inverse des autres banques qui ne permettent pas certaines actions en ligne et privilégient les rendez-vous en agence, et qui nécessitent des délais de traitement.
-Notre produit est une solution intéressante pour les clients qui ne peuvent pas ou ne veulent pas se rendre en agence pour leurs démarches.
-Backlog initial
+### Vision du produit
+
+**Pour** les utilisateurs / clients d’une banque
+
+**Qui** ont besoin une application où l’on peut gérer ses comptes, consulter son solde mais aussi convertir son argent dans une autre devise pour faciliter ses déplacements.
+
+**Notre** solution, BanqueClient est une application de gestion de compte en banque
+
+**Qui** permet d’avoir accès à ses comptes et de pouvoir y faire des actions, en ligne et facilement, et rapidement, à l’instar de virements entre comptes.
+
+**À l’inverse** des autres banques qui ne permettent pas certaines actions en ligne et privilégient les rendez-vous en agence, et qui nécessitent des délais de traitement.
+
+**Notre produit** est une solution intéressante pour les clients qui ne peuvent pas ou ne veulent pas se rendre en agence pour leurs démarches.
+
+### Backlog initial
+
 Clarification fonctionnelle
 L’application met à disposition un seul type d’utilisateur (simplement nommé “utilisateur”).
 Il peut se connecter à l’aide de son numéro client ainsi que son mot de passe pour pouvoir créer un compte bancaire ou consulter ceux existants. Un utilisateur peut également effectuer différentes opérations sur ses comptes, comme consulter son solde, faire un virement vers un autre compte ou convertir un montant dans une autre devise.
