@@ -18,6 +18,11 @@ Il y a 2 utilisateurs :
 |Bienaimé Joseph   |`1`	|`password`|
 |Compte de l'agence|`2`   |`password`|
 
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 ## Technologies utilisées
 - BDD : MariaDB 10.1.38
 - Frontend : JavaFX (FXML)
