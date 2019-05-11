@@ -1,9 +1,10 @@
-# François Recchia
-# Thibaut Genrault
-# Florian Pexoto
-# Thomas Deiss
-# TP SUJET N°1 : Annuaire d'entreprise
-Projet JavaEE dans le cadre de la LP - GL (Mai 2019)
+# TP Application Banque (BanqueClient)
+Projet Java dans le cadre de la LP - GL (Mai 2019)
+## Équipe
+François Recchia
+Thibaut Genrault
+Florian Pexoto
+Thomas Deiss
 ## Construction et lancement de l'application
 Importer le projet dans Eclipse (.settings, .classpath et .project envoyés en PJ par mail si nécessaire)
 
