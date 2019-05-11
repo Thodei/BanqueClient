@@ -6,7 +6,7 @@ Projet Java dans le cadre de la LP - GL (Mai 2019)
 - Florian Pexoto
 - Thomas Deiss
 ## Construction et lancement de l'application
-Importer le projet dans Eclipse (.settings, .classpath et .project envoyés en PJ par mail si nécessaires)
+Importer le projet dans Eclipse (*.settings, .classpath et .project envoyés en PJ par mail si nécessaires*)
 
 Importer la BDD grâce au script fourni (bdd_bank.sql)
 
