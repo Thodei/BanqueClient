@@ -2,7 +2,8 @@
 Projet Java dans le cadre de la LP - GL (Mai 2019)
 ## Équipe
 
-François Recchia | Thibaut Genrault | Florian Pexoto | Thomas Deiss
+| François Recchia | Thibaut Genrault | Florian Pexoto | Thomas Deiss |
+
 
 ## Construction et lancement de l'application
 Importer le projet dans Eclipse (*.settings, .classpath et .project envoyés en PJ par mail si nécessaires*)
