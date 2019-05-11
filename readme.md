@@ -95,10 +95,19 @@ Il a les mêmes droits que l'utilisateur mais peut aussi consulter et geler les 
 -	pouvoir créer rapidement un compte. 
 -	pouvoir consulter mes comptes.
 -	pouvoir faire un virement.
--	pouvoir geler un compte.
 -	pouvoir convertir mon argent dans une autre devise.
 
 **Pour** gagner du temps et faciliter mes démarches.
+
+**En tant que** responsable d'agence
+
+**Je veux**:
+
+-	avoir les mêmes droits qu'un utilisateur
+-	pouvoir consulter les comptes de tout le monde
+-	pouvoir geler un compte.
+
+**Pour** aider mes clients.
 
 ### Rôles attribués :
 
