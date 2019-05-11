@@ -29,6 +29,7 @@ Il y a 2 utilisateurs :
 
 ### General
 - [x] Gestion du type d'utilisateur "*utilisateur*"
+
 ### Fenêtres
 #### Login
 - [x] Connexion/Déconnexion à son compte
