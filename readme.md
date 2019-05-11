@@ -13,10 +13,12 @@ Importer la BDD grâce au script fourni (bdd_bank.sql)
 Lancer l'application. 
 
 Il y a 2 utilisateurs :
+
 |                  |Login |Password  |
 |------------------|------|----------|
 |Bienaimé Joseph   |`1`	|`password`|
 |Compte de l'agence|`2`   |`password`|
+
 
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
