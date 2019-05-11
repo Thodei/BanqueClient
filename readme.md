@@ -28,7 +28,7 @@ Il y a 2 utilisateurs :
 #### Login
 - [x] Connexion/Déconnexion à son compte
 #### Compte
-- [x] Sélection de son compte (vue `"Compte.fmxl"`)
+- [x] Sélection de son compte
 #### Détails compte
 - [x] Affichage du solde en €
 - [x] Conversion du solde en $ et £ 
