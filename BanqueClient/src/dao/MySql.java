@@ -17,7 +17,7 @@ public class MySql
 	{		
 		try
 		{
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 		}
 		catch(ClassNotFoundException e)
 		{
