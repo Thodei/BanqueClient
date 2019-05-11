@@ -53,8 +53,6 @@ Il y a 2 utilisateurs :
 ## Sprint 0
 ### Vision du produit
 
-```
-
 **Pour** les utilisateurs / clients d’une banque
 
 **Qui** ont besoin une application où l’on peut gérer ses comptes, consulter son solde mais aussi convertir son argent dans une autre devise pour faciliter ses déplacements.
@@ -66,8 +64,6 @@ Il y a 2 utilisateurs :
 **À l’inverse** des autres banques qui ne permettent pas certaines actions en ligne et privilégient les rendez-vous en agence, et qui nécessitent des délais de traitement.
 
 **Notre produit** est une solution intéressante pour les clients qui ne peuvent pas ou ne veulent pas se rendre en agence pour leurs démarches.
-
-```
 
 ### Backlog initial
 
