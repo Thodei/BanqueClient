@@ -24,7 +24,7 @@ Il y a 2 utilisateurs :
 - **Frontend** : JavaFX (FXML)
 - **IDE** : Eclipse 2018-12 (4.10.0)
 - Apache Maven 3.6.0
-## Tâches effectuées
+## Fonctionnalités
 #### Login
 - [x] Connexion/Déconnexion à son compte
 #### Compte
