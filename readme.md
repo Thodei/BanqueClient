@@ -36,3 +36,68 @@ Il y a 2 utilisateurs :
 - [x] Virement vers un autre compte
 ## Notes
 
+
+
+
+## Sprints
+### Sprint backlog n°1
+
+François : Vues en FXML (vélocité : 21)
+
+Florian : Diagramme base de données, création de la base de données (vélocité : 13)
+
+Thibaut : Finalisation sprint 0, 1ers tests (vélocité : 34)
+
+Thomas : Finalisation sprint 0, classe conversion devises (vélocité : 34)
+
+
+### Sprint backlog n°2
+
+François : Vues en FXML (vélocité : 21)
+
+Florian : Implémentation de la base de données (vélocité : 13)
+
+Thibaut : Tests sur la base de données (vélocité : 13)
+
+Thomas : Développement des méthodes (vélocité : 55)
+
+
+### Sprint backlog n°3
+
+François : Documentation du projet (vélocité : 34)
+
+Florian : Préparation des requêtes (vélocité : 21)
+
+Thibaut : Documentation du projet (vélocité : 34)
+
+Thomas : Requêtes utiles aux méthodes (vélocité : 55)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
