@@ -82,7 +82,8 @@ L’application met à disposition deux types d’utilisateurs
 
 ```
 Il peut se connecter à l’aide de son numéro client ainsi que son mot de passe pour pouvoir créer un compte bancaire ou consulter ceux existants. 
-Un utilisateur peut également effectuer différentes opérations sur ses comptes, comme consulter son solde, faire un virement vers un autre compte ou convertir un montant dans une autre devise.
+Un utilisateur peut également effectuer différentes opérations sur ses comptes, comme consulter son solde,
+faire un virement vers un autre compte ou convertir un montant dans une autre devise.
 ```
 
 2- Responsable d'agence
