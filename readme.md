@@ -20,9 +20,9 @@ Il y a 2 utilisateurs :
 |Compte de l'agence|`2`   |`password`|
 
 ## Technologies utilisées
-- BDD : MariaDB 10.1.38
-- Frontend : JavaFX (FXML)
-- IDE : Eclipse 2018-12 (4.10.0)
+- **BDD** : MariaDB 10.1.38
+- **Frontend** : JavaFX (FXML)
+- **IDE** : Eclipse 2018-12 (4.10.0)
 - Apache Maven 3.6.0
 ## Tâches effectuées
 #### Login
