@@ -67,22 +67,29 @@ Il y a 2 utilisateurs :
 
 ### Backlog initial
 
-Clarification fonctionnelle
+#### Clarification fonctionnelle
+
 L’application met à disposition un seul type d’utilisateur (simplement nommé “utilisateur”).
 Il peut se connecter à l’aide de son numéro client ainsi que son mot de passe pour pouvoir créer un compte bancaire ou consulter ceux existants. Un utilisateur peut également effectuer différentes opérations sur ses comptes, comme consulter son solde, faire un virement vers un autre compte ou convertir un montant dans une autre devise.
-User Stories
-En tant qu’utilisateur
-Je veux:
+
+#### User Stories
+
+**En tant qu**’utilisateur
+
+**Je veux**:
+
 -	pouvoir créer rapidement un compte. 
 -	pouvoir consulter mes comptes.
 -	pouvoir faire un virement.
 -	pouvoir geler un compte.
 -	pouvoir convertir mon argent dans une autre devise.
-Pour gagner du temps et faciliter mes démarches.
-Rôles attribués :
-Développeur : François, Florian, Thibaut, Thomas
-Scrum master : Thomas
-Client : M. Joyeux
+
+**Pour** gagner du temps et faciliter mes démarches.
+
+### Rôles attribués :
+**Développeur** : François, Florian, Thibaut, Thomas
+**Scrum master** : Thomas
+**Client** : M. Joyeux
 
 
 ## Organisation de l’équipe pour réaliser le travail
