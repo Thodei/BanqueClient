@@ -30,11 +30,9 @@ Il y a 2 utilisateurs :
 #### Compte
 - [x] Sélection de son compte (vue `"Compte.fmxl"`)
 #### Détails compte
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
+- [x] Affichage du solde en €
+- [x] Conversion du solde en $ et £ 
+- [x] Affichage du découvert autorisé
+- [x] Virement vers un autre compte
 ## Notes
 
