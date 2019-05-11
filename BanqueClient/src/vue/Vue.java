@@ -23,7 +23,18 @@ public class Vue {
 		final FXMLLoader fxmlLoader = new FXMLLoader(fxml);
 		final VBox nodeParent = (VBox) fxmlLoader.load();
 		Scene scene = new Scene(nodeParent);
+		setStyleSheets(scene,VueName);
 		Main.parentWindow.setScene(scene);
 		Main.parentWindow.show();
+	}
+	
+	private void setStyleSheets(Scene scene, String vue)
+	{
+		scene.getStylesheets().add("/vue/form.css");
+		
+		if (vue.equals("Compte")) 
+		{
+			scene.getStylesheets().add("/vue/listview.css");
+		}
 	}
 }

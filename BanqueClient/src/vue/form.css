@@ -1,0 +1,11 @@
+.button
+{
+	-fx-background-color: rgb(50,50,50);
+	-fx-text-fill: rgb(240,240,240);
+}
+
+.text-field
+{
+	-fx-background-color: rgb(170,170,170);
+	-fx-text-fill: rgb(240,240,240);
+}

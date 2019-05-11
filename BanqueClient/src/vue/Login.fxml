@@ -10,21 +10,27 @@
 
 <VBox prefHeight="637.0" prefWidth="1267.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
    <children>
-      <Pane prefHeight="638.0" prefWidth="1220.0">
+      <Pane prefHeight="638.0" prefWidth="1220.0" style="-fx-background-color: rgb(54,57,63);">
          <children>
-            <Pane prefHeight="113.0" prefWidth="1267.0" style="-fx-background-color: lightgrey;">
+            <Pane prefHeight="113.0" prefWidth="1267.0" style="-fx-background-color: rgb(47,49,54);">
                <children>
-                  <Label layoutX="407.0" layoutY="30.0" text="Bienvenue sur Banque Client">
+                  <Label layoutX="372.0" layoutY="34.0" text="Bienvenue sur Banque Client" textFill="#a0a0a0">
                      <font>
-                        <Font size="36.0" />
+                        <Font name="Verdana" size="36.0" />
                      </font>
                   </Label>
                   <Button layoutX="1199.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_quitter" text="Quitter" />
                </children></Pane>
             <TextField fx:id="Text_NumeroCompte" layoutX="510.0" layoutY="313.0" prefHeight="25.0" prefWidth="248.0" />
             <PasswordField fx:id="Text_Password" layoutX="510.0" layoutY="390.0" prefHeight="25.0" prefWidth="248.0" />
-            <Label layoutX="582.0" layoutY="289.0" text="Numéro de client" />
-            <Label layoutX="598.0" layoutY="363.0" text="Mot de passe" />
+            <Label layoutX="582.0" layoutY="290.0" text="Numéro de client" textFill="#969696">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font></Label>
+            <Label layoutX="594.0" layoutY="363.0" text="Mot de passe" textFill="#969696">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font></Label>
             <Button fx:id="Btn_Connexion" layoutX="582.0" layoutY="448.0" mnemonicParsing="false" onAction="#Btn_Connexion_Click" prefHeight="25.0" prefWidth="104.0" text="Connexion" />
          </children></Pane>
    </children>
