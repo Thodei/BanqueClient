@@ -75,11 +75,18 @@ Rôles attribués :
 Développeur : François, Florian, Thibaut, Thomas
 Scrum master : Thomas
 Client : M. Joyeux
+
+
 ## Organisation de l’équipe pour réaliser le travail
+
 **François** : Front-end
+
 **Florian** : Base de données + Back-end (DAO)
+
 **Thibaut** : Tests métier & tests techniques
+
 **Thomas** : Back-end
+
 ## Points de vélocités
 Front-end : 13
 -	Réalisation des fenêtres JavaFX : 13
