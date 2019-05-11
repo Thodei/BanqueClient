@@ -98,17 +98,17 @@ Client : M. Joyeux
 ## Points de vélocités
 Front-end : `13`
 
--	Réalisation des fenêtres JavaFX : 13`
+-	Réalisation des fenêtres JavaFX : `13`
 
-Back-end : 102
+Back-end : `102`
 
--	DAO : 34
--	Tests : 13
--	Développement des méthodes : 55
+-	DAO : `34`
+-	Tests : `13`
+-	Développement des méthodes : `55`
 
 Base de données : 13
 
--	Création de la base de données & scripts : 13
+-	Création de la base de données & scripts : `13`
 
 
 
