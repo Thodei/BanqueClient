@@ -88,8 +88,11 @@ Il peut se connecter à l’aide de son numéro client ainsi que son mot de pass
 **Pour** gagner du temps et faciliter mes démarches.
 
 ### Rôles attribués :
+
 **Développeur** : François, Florian, Thibaut, Thomas
+
 **Scrum master** : Thomas
+
 **Client** : M. Joyeux
 
 
