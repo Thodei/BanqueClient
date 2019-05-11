@@ -106,7 +106,7 @@ Back-end : `102`
 -	Tests : `13`
 -	Développement des méthodes : `55`
 
-Base de données : 13
+Base de données : `13`
 
 -	Création de la base de données & scripts : `13`
 
@@ -144,33 +144,3 @@ Base de données : 13
 **Thibaut** : Documentation du projet (`vélocité : 34`)
 
 **Thomas** : Requêtes utiles aux méthodes (`vélocité : 55`)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
