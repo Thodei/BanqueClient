@@ -2,11 +2,9 @@
 Projet Java dans le cadre de la LP - GL (Mai 2019)
 ## Équipe
 
-| François Recchia | Thibaut Genrault | Florian Pexoto | Thomas Deiss |
-
 | | | |
 |-|-|-|
-|__Bold Key__| Value1 |
+| François Recchia | Thibaut Genrault | Florian Pexoto | Thomas Deiss |
 | Normal Key | Value2 |
 
 
