@@ -42,13 +42,13 @@ Il y a 2 utilisateurs :
 ## Sprints
 ### Sprint backlog n°1
 
-François : Vues en FXML (`vélocité : 21`)
+**François** : Vues en FXML (`vélocité : 21`)
 
-Florian : Diagramme base de données, création de la base de données (`vélocité : 13`)
+**Florian** : Diagramme base de données, création de la base de données (`vélocité : 13`)
 
-Thibaut : Finalisation sprint 0, 1ers tests (`vélocité : 34`)
+**Thibaut** : Finalisation sprint 0, 1ers tests (`vélocité : 34`)
 
-Thomas : Finalisation sprint 0, classe conversion devises (`vélocité : 34`)
+**Thomas** : Finalisation sprint 0, classe conversion devises (`vélocité : 34`)
 
 
 ### Sprint backlog n°2
