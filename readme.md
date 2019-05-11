@@ -38,7 +38,7 @@ Il y a 2 utilisateurs :
 
 
 
-### Gestion de projet
+# Gestion de projet
 
 ## Indications du client
 ### Côté projet : 
