@@ -64,13 +64,13 @@ Thomas : Développement des méthodes (vélocité : 55)
 
 ### Sprint backlog n°3
 
-François : Documentation du projet (vélocité : 34)
+François : Documentation du projet (`vélocité : 34`)
 
-Florian : Préparation des requêtes (vélocité : 21)
+Florian : Préparation des requêtes (`vélocité : 21`)
 
-Thibaut : Documentation du projet (vélocité : 34)
+Thibaut : Documentation du projet (`vélocité : 34`)
 
-Thomas : Requêtes utiles aux méthodes (vélocité : 55)
+Thomas : Requêtes utiles aux méthodes (`vélocité : 55`)
 
 
 
