@@ -26,6 +26,9 @@ Il y a 2 utilisateurs :
 - **IDE** : Eclipse 2018-12 (4.10.0)
 - Apache Maven 3.6.0
 ## Fonctionnalités
+
+### General
+### Fenêtres
 #### Login
 - [x] Connexion/Déconnexion à son compte
 #### Compte
