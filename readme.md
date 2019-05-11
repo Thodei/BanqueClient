@@ -1,20 +1,20 @@
 # TP Application Banque (BanqueClient)
 Projet Java dans le cadre de la LP - GL (Mai 2019)
 ## Équipe
-François Recchia
-Thibaut Genrault
-Florian Pexoto
-Thomas Deiss
+- François Recchia
+- Thibaut Genrault
+- Florian Pexoto
+- Thomas Deiss
 ## Construction et lancement de l'application
 Importer le projet dans Eclipse (.settings, .classpath et .project envoyés en PJ par mail si nécessaire)
 
-Importer la BDD grâce au script fourni (SCRIPT_BDD.sql)
+Importer la BDD grâce au script fourni (bdd_bank.sql)
 
-Lancer l'application. Le lien de connexion est : http://localhost:8080/annuaire/connexion
+Lancer l'application. 
 
-Il y a 2 utilisateurs, le plus simple est :
-- login : admin
-- password : admin
+Il y a 2 utilisateurs :
+- login : 1                   | 2
+- password : password         | password
 
 ## Technologies utilisées
 - Serveur d'application : Apache Tomcat 9.0.19 (+ Webby)
