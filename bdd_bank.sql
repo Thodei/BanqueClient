@@ -86,8 +86,8 @@ CREATE TABLE `compte` (
 --
 
 INSERT INTO `compte` (`idCompte`, `numCompte`, `gelCompte`, `balanceCompte`, `decouvertCompte`, `Utilisateur_idUtilisateur`, `Banque_idBanque`) VALUES
-(1, 1, 0, 39995, 0, 1, 1),
-(2, 2, 0, 65005, 0, 2, 1);
+(1, 1, 0, 5000, 0, 1, 1),
+(2, 2, 0, 65000, 0, 2, 1);
 
 --
 -- Index pour les tables déchargées
