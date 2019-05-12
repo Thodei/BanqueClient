@@ -40,7 +40,6 @@ Il y a 2 utilisateurs :
 - [x] Conversion du solde en $ et £ 
 - [x] Affichage du découvert autorisé
 - [x] Virement vers un autre compte
-## Notes
 
 ***
 
