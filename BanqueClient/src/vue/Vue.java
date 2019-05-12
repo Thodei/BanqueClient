@@ -28,7 +28,7 @@ public class Vue {
 		Main.parentWindow.show();
 	}
 	
-	private void setStyleSheets(Scene scene, String vue)
+	public void setStyleSheets(Scene scene, String vue)
 	{
 		scene.getStylesheets().add("/vue/form.css");
 		
