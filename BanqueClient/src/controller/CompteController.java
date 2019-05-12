@@ -2,9 +2,6 @@ package controller;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import dao.Dictionnaire;
-import dao.Requete;
 import model.Main;
 import vue.Vue;
 import javafx.event.EventHandler;
@@ -16,7 +13,6 @@ public class CompteController {
 
 	@FXML ListView<String> ListCompte;
 	
-
     @FXML 
     public void initialize() 
     {    
@@ -27,7 +23,11 @@ public class CompteController {
             {
             	String NumCompte = null; 
         		NumCompte = ListCompte.getSelectionModel().getSelectedItem();
-        		NumCompte = NumCompte.substring(NumCompte.indexOf("°")+1 , NumCompte.indexOf(" ", NumCompte.indexOf("°")));    
+        		
+        		try 
+        		{
+        			NumCompte = NumCompte.substring(NumCompte.indexOf("Â°")+1 , NumCompte.indexOf(" ", NumCompte.indexOf("Â°")));    
+        		}catch(Exception ignore) { }        		
             		
             	if (NumCompte != null && NumCompte != "")
             	{
@@ -72,7 +72,7 @@ public class CompteController {
 	{    	
 		ListCompte.getItems().clear();
 		
-		//On récupère tous les comptes d'un client
+		//On rÃ©cupÃ¨re tous les comptes d'un client
 		ResultSet liste_comptes;
 		try 
 		{
@@ -84,18 +84,18 @@ public class CompteController {
 				{
 					String numCompte = String.valueOf(liste_comptes.getInt(1));
 					
-					//On récupère les détails de chaque compte
+					//On rÃ©cupÃ¨re les dÃ©tails de chaque compte
 					ResultSet compte = Main.Req.details_compte(numCompte);
 					compte.next();
 					String soldeCompte = String.valueOf(compte.getDouble("balanceCompte"));
-					AddListCompte("Compte n°" + numCompte + " ( Solde : "+ soldeCompte +" €)");
+					AddListCompte("Compte nÂ°" + numCompte + " ( Solde : "+ soldeCompte +" â‚¬)");
 				}
 			}
 			else
 				AddListCompte("Aucun compte existant.");
 		} catch (SQLException e) 
 		{
-			Main.message_erreur("Erreur lors de la récupération des comptes. (" + e.toString() + ")");
+			Main.message_erreur("Erreur lors de la rÃ©cupÃ©ration des comptes. (" + e.toString() + ")");
 			e.printStackTrace();
 		}
 	}
