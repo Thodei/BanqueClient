@@ -179,3 +179,14 @@ Il a les mêmes droits que l'utilisateur mais peut aussi consulter et geler les 
 **Thibaut** : Documentation du projet (`vélocité : 34`)
 
 **Thomas** : Requêtes utiles aux méthodes (`vélocité : 55`)
+
+
+### Sprint backlog n°4
+
+**François** : Documentation du projet (`vélocité : 34`)
+
+**Florian** : Requêtes (`vélocité : 21`)
+
+**Thibaut** : Tests techniques (`vélocité : 34`)
+
+**Thomas** : Développement des méthodes (`vélocité : 55`)
