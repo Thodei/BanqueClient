@@ -10,18 +10,18 @@ public class ConversionEuro
 	
 	public static double euroToLivre(double euro)
 	{
-		return euro * 0.77;
+		return euro * 0.87;
 	}
 	
 	
 	public static double dollarToEuro(double dollar)
 	{
-		return dollar * 0.90;
+		return dollar * 0.89;
 	}
 
 	public static double livreToEuro(double livre)
 	{
-		return livre * 1.16;
+		return livre * 1.15;
 	}
 
 }
