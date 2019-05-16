@@ -46,4 +46,9 @@ public class Dictionnaire
 	{
 		return "UPDATE compte SET balanceCompte = balanceCompte - " + somme + " WHERE numCompte = " + numCompte;
 	}
+	
+	public static String Req_SELECT_GetSolde(String numCompte)
+	{
+		return "SELECT balanceCompte FROM compte WHERE numCompte = " +numCompte;
+	}
 }
