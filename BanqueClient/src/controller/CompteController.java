@@ -88,7 +88,7 @@ public class CompteController {
 					ResultSet compte = Main.Req.details_compte(numCompte);
 					compte.next();
 					String soldeCompte = String.valueOf(compte.getDouble("balanceCompte"));
-					AddListCompte("Compte n°" + numCompte + " ( Solde : "+ soldeCompte +" €");
+					AddListCompte("Compte n°" + numCompte + " ( Solde : "+ soldeCompte +" € )");
 				}
 			}
 			else
