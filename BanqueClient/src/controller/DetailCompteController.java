@@ -29,7 +29,7 @@ public class DetailCompteController {
 	@FXML 
     public void initialize() 
 	{    
-		Label_Titre.setText("Compte nÂ° " + Vue.NumCompte);
+		Label_Titre.setText("Compte n° " + Vue.NumCompte);
 		rafraichir_solde();
 		rafraichir_solde_dollar();
 		rafraichir_solde_livre();
@@ -44,7 +44,7 @@ public class DetailCompteController {
 			details_compte = Main.Req.details_compte(String.valueOf(Main.IDClient));
 			details_compte.next();
 			String solde = String.valueOf(details_compte.getDouble("balanceCompte"));
-			text_balance.setText(solde + " â‚¬");
+			text_balance.setText(solde + " €");
 			this.solde = details_compte.getDouble("balanceCompte");
 		} catch (SQLException e) 
 		{
@@ -61,7 +61,7 @@ public class DetailCompteController {
 	private void rafraichir_solde_livre()
 	{
 		Double solde_livres = ConversionEuro.euroToLivre(this.solde);
-		solde_livre.setText(String.valueOf(solde_livres + " Â£"));
+		solde_livre.setText(String.valueOf(solde_livres + " £"));
 	}
 	
 	private void rafraichir_decouvert()
@@ -69,10 +69,10 @@ public class DetailCompteController {
 		try 
 		{
 			Double decouvert = details_compte.getDouble("decouvertCompte");
-			text_decouvert.setText(String.valueOf(decouvert) + " â‚¬");
+			text_decouvert.setText(String.valueOf(decouvert) + " €");
 		} catch (SQLException e) 
 		{
-			Main.message_erreur("Impossible de charger le dÃ©couvert. Cause : " + e.toString()); 
+			Main.message_erreur("Impossible de charger le découvert. Cause : " + e.toString()); 
 		}
 	}
 	
@@ -84,24 +84,24 @@ public class DetailCompteController {
 		String compte = text_virement_n_compte.getText();
 		
 		if(somme.isEmpty() || compte.isEmpty())
-			Main.message_erreur("Entrez une somme Ã  virer ainsi que le nÂ° de compte du destinataire.");
+			Main.message_erreur("Entrez une somme à virer ainsi que le n° de compte du destinataire.");
 		else
 		{
 			try 
 			{
 				if(somme.contains("-"))
 				{
-					Main.message_erreur("La somme ne doit pas Ãªtre nÃ©gative !");
+					Main.message_erreur("La somme ne doit pas être négative !");
 					return;
 				}
 				
 				if(Main.Req.virement(Double.parseDouble(somme), Vue.NumCompte, compte))
 				{
 					rafraichir_solde();
-					Main.message_info("Virement a Ã©tÃ© Reussi");					
+					Main.message_info("Virement réussi");					
 				}
 				else
-					Main.message_erreur("Le virement a Ã©chouÃ©. Peut-Ãªtre que le compte destinataire n'existe pas ou que votre solde est insuffisant.");
+					Main.message_erreur("Le virement a échoué. Peut-être que le compte destinataire n'existe pas ou que votre solde est insuffisant.");
 			} catch (NumberFormatException e) 
 			{
 				Main.message_erreur("Veuillez entrer une somme correcte. Erreur : " + e.toString());
@@ -120,7 +120,7 @@ public class DetailCompteController {
 			new Vue("Compte",null,null);
 		} catch (Exception e) 
     	{
-			Main.message_erreur("Impossible de revenir Ã  la fenÃªtre prÃ©cÃ©dente. Erreur : " + e.toString());
+			Main.message_erreur("Impossible de revenir à la fenètre précédente. Erreur : " + e.toString());
 		}
     }
     

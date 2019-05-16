@@ -26,7 +26,7 @@ public class CompteController {
         		
         		try 
         		{
-        			NumCompte = NumCompte.substring(NumCompte.indexOf("Â°")+1 , NumCompte.indexOf(" ", NumCompte.indexOf("Â°")));    
+        			NumCompte = NumCompte.substring(NumCompte.indexOf("°")+1 , NumCompte.indexOf(" ", NumCompte.indexOf("°")));    
         		}catch(Exception ignore) { }        		
             		
             	if (NumCompte != null && NumCompte != "")
@@ -88,14 +88,14 @@ public class CompteController {
 					ResultSet compte = Main.Req.details_compte(numCompte);
 					compte.next();
 					String soldeCompte = String.valueOf(compte.getDouble("balanceCompte"));
-					AddListCompte("Compte nÂ°" + numCompte + " ( Solde : "+ soldeCompte +" â‚¬)");
+					AddListCompte("Compte n°" + numCompte + " ( Solde : "+ soldeCompte +" €");
 				}
 			}
 			else
 				AddListCompte("Aucun compte existant.");
 		} catch (SQLException e) 
 		{
-			Main.message_erreur("Erreur lors de la rÃ©cupÃ©ration des comptes. (" + e.toString() + ")");
+			Main.message_erreur("Erreur lors de la récupération des comptes. (" + e.toString() + ")");
 			e.printStackTrace();
 		}
 	}
