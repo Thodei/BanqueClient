@@ -26,11 +26,11 @@ public class MySql
 		try
 		{
 			connexion=DriverManager.getConnection("jdbc:mysql://" + ip + ":" + port + "/" + db, user, pwd);
-			System.out.println("Connexion Ã©tablie");
+			System.out.println("Connexion établie");
 		}
 		catch(SQLException e)
 		{
-			System.out.println("Connexion Ã  la BDD impossible");
+			System.out.println("Connexion à la BDD impossible");
 			e.printStackTrace();
 		}
 	}
