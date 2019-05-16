@@ -1,25 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DetailCompteController">
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailCompteController">
    <children>
-      <Pane prefHeight="640.0" prefWidth="1270.0">
+      <Pane prefHeight="640.0" prefWidth="1270.0" style="-fx-background-color: rgb(64,67,73);">
          <children>
-            <Pane prefHeight="113.0" prefWidth="1270.0" style="-fx-background-color: lightgrey;">
+            <Pane prefHeight="115.0" prefWidth="1270.0" style="-fx-background-color: rgb(47,49,54);">
                <children>
-                  <Label fx:id="Label_Titre" layoutX="490.0" layoutY="30.0" text="Compte :">
+                  <Label fx:id="Label_Titre" layoutX="527.0" layoutY="35.0" text="Compte n°x" textFill="#a0a0a0">
                      <font>
-                        <Font size="36.0" />
+                        <Font name="Verdana" size="36.0" />
                      </font>
                   </Label>
+                  <Button fx:id="button_quitter" layoutX="1202.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_quitter" text="Quitter" />
                </children>
             </Pane>
             <Button fx:id="Btn_Retour" layoutX="14.0" layoutY="123.0" mnemonicParsing="false" onAction="#Btn_Retour_Click" prefHeight="25.0" prefWidth="155.0" text="Retour à ma synthèse" />
+            <Pane layoutX="1070.0" layoutY="115.0" prefHeight="525.0" prefWidth="200.0" style="-fx-background-color: rgb(54,57,63);">
+               <padding>
+                  <Insets top="115.0" />
+               </padding>
+               <children>
+                  <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="170.0" prefWidth="200.0" style="-fx-background-color: rgb(54,57,63); -fx-border-width: 1;">
+                     <children>
+                        <Button fx:id="button_virement" layoutX="46.0" layoutY="132.0" mnemonicParsing="false" onAction="#virement" text="Faire un virement" />
+                        <TextField fx:id="text_virement_n_compte" layoutX="51.0" layoutY="49.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                        <TextField fx:id="text_virement_somme" layoutX="51.0" layoutY="99.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+                        <Label layoutX="51.0" layoutY="32.0" text="N° de compte" textFill="#969696" />
+                        <Label layoutX="51.0" layoutY="82.0" text="Somme" textFill="#969696" />
+                        <Label layoutX="74.0" layoutY="6.0" text="Virement" textFill="#979797">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="46.0" layoutY="446.0" text="Découvert autorisé :" textFill="#969696" />
+                  <Label fx:id="text_decouvert" layoutX="93.0" layoutY="470.0" text="0€" textFill="#969696" />
+               </children>
+            </Pane>
+            <Pane layoutY="614.0" prefHeight="25.0" prefWidth="1270.0" style="-fx-background-color: rgb(47,49,54);" />
+            <VBox alignment="CENTER" layoutY="220.0" prefHeight="200.0" prefWidth="1070.0">
+               <children>
+                  <Label fx:id="text_balance" text="10 562 €" textFill="#969696">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox layoutX="820.0" layoutY="514.0" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <Label prefHeight="30.0" text="Solde en $ :" textFill="#969696">
+                     <HBox.margin>
+                        <Insets left="5.0" right="25.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="solde_dollar" prefHeight="30.0" prefWidth="100.0" text="211 $" textFill="#969696">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="820.0" layoutY="564.0" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <Label prefHeight="30.0" text="Solde en £ :" textFill="#969696">
+                     <HBox.margin>
+                        <Insets left="5.0" right="25.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="solde_livre" prefHeight="30.0" prefWidth="100.0" text="211 £" textFill="#969696">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
          </children></Pane>
    </children>
 </VBox>

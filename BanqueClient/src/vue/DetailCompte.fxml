@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -9,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailCompteController">
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailCompteController">
    <children>
       <Pane prefHeight="640.0" prefWidth="1270.0" style="-fx-background-color: rgb(64,67,73);">
          <children>
@@ -23,7 +28,7 @@
                   <Button fx:id="button_quitter" layoutX="1202.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_quitter" text="Quitter" />
                </children>
             </Pane>
-            <Button fx:id="Btn_Retour" layoutX="14.0" layoutY="123.0" mnemonicParsing="false" onAction="#Btn_Retour_Click" prefHeight="25.0" prefWidth="155.0" text="Retour à ma synthèse" />
+            <Button fx:id="Btn_Retour" layoutX="14.0" layoutY="123.0" mnemonicParsing="false" onAction="#Btn_Retour_Click" prefHeight="31.0" prefWidth="168.0" text="Retour à ma synthèse" />
             <Pane layoutX="1070.0" layoutY="115.0" prefHeight="525.0" prefWidth="200.0" style="-fx-background-color: rgb(54,57,63);">
                <padding>
                   <Insets top="115.0" />
