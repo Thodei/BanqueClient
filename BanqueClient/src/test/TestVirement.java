@@ -1,6 +1,11 @@
 package test;
 
 import static org.junit.Assert.assertEquals;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 import org.junit.*;
 
 import dao.Dictionnaire;
@@ -20,27 +25,64 @@ public class TestVirement
 	}
 	
 	@Test
-	public void testVirementCompteEmetteur() 
+	public void testVirementCompteEmetteur() throws SQLException 
 	{
+		query = new Requete();
+		
 		String compteEmetteur = "1";
 		String compteDestinataire = "2";
-		req.Req_SELECT_GetSolde(compteEmetteur);
-		
-		int soldeAvantDebit = Integer.parseInt(req.Req_SELECT_GetSolde(compteEmetteur));
+		int soldeAvantDebit = 0;
+		int soldeApresDebit = 0;
+		int soldeApresDebitAttendu = 0;
 		int montantVirement = 300;
-		int soldeApresDebitAttendu = soldeAvantDebit - montantVirement;
 		
-		query = new Requete();
+		
+		ResultSet resultatAvant = query.RequeteSelect(req.Req_SELECT_GetSolde(compteEmetteur));
+		while(resultatAvant.next()) 
+		{
+			soldeAvantDebit = resultatAvant.getInt(1);
+		}
+		soldeApresDebitAttendu = soldeAvantDebit - montantVirement;
+		
 		query.virement(montantVirement, compteEmetteur, compteDestinataire);
 		
+		ResultSet resultatApres = query.RequeteSelect(req.Req_SELECT_GetSolde(compteEmetteur));
+		while(resultatApres.next()) 
+		{
+			soldeApresDebit = resultatApres.getInt(1);
+		}
 		
-		assertEquals(soldeApresDebitAttendu,query.virement(montantVirement, compteEmetteur, compteDestinataire), 1);
+		assertEquals(soldeApresDebitAttendu,soldeApresDebit, 1);
 	}
 	
-	public void testVirementCompteDestinataire() 
+	@Test
+	public void testVirementCompteDestinataire() throws SQLException 
 	{
-		double montantVirement = 250;
-		double resultatAttendu = 11.20;
-		assertEquals(resultatAttendu,ConversionEuro.euroToDollar(valeurEnEuro), 1);
+		query = new Requete();
+		
+		String compteEmetteur = "1";
+		String compteDestinataire = "2";
+		int soldeAvantCredit = 0;
+		int soldeApresCredit = 0;
+		int soldeApresCreditAttendu = 0;
+		int montantVirement = 300;
+		
+		
+		ResultSet resultatAvant = query.RequeteSelect(req.Req_SELECT_GetSolde(compteDestinataire));
+		while(resultatAvant.next()) 
+		{
+			soldeAvantCredit = resultatAvant.getInt(1);
+		}
+		soldeApresCreditAttendu = soldeAvantCredit + montantVirement;
+		
+		query.virement(montantVirement, compteEmetteur, compteDestinataire);
+		
+		ResultSet resultatApres = query.RequeteSelect(req.Req_SELECT_GetSolde(compteDestinataire));
+		while(resultatApres.next()) 
+		{
+			soldeApresCredit = resultatApres.getInt(1);
+		}
+		
+		assertEquals(soldeApresCreditAttendu,soldeApresCredit, 1);
 	}
 }
